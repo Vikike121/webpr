@@ -9,22 +9,26 @@ body {
     
 }
 
-ul li {
-    list-style: none;
-}
-ul {
-    display: flex;
-   flex-wrap: wrap; 
-   gap:20px;
-}
-
-a {
-    text-decoration: none;
-}
 
 nav {
-    
-    flex: 1 1 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #a08787;
 }
 
 header {
@@ -46,4 +50,8 @@ header {
     padding: 20px;
     border-radius: 20px;
     flex: 1 1 200px;
+}
+
+#active {
+    background-color: brown;
 }
